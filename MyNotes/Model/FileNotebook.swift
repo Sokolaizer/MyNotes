@@ -1,5 +1,6 @@
 
 import Foundation
+import CocoaLumberjack
 
 class FileNotebook {
   public private(set) var notes = [String: Note]()
@@ -10,10 +11,16 @@ class FileNotebook {
   }
   public func add(_ note: Note) {
     notes[note.uid] = note
+    #if QA
+      print("Note \(note.uid) added")
+    #endif
   }
   
   public func remove(with uid: String) {
     notes.removeValue(forKey: uid)
+    #if QA
+    print("Note \(uid) removed")
+    #endif
   }
   
   public func save() {
@@ -31,6 +38,9 @@ class FileNotebook {
     do {
       let data = try JSONSerialization.data(withJSONObject: json, options: [])
       fm.createFile(atPath: filePath.path, contents: data, attributes: nil)
+      #if QA
+      print("Notes saved to file")
+      #endif
     } catch {
       print(error)
     }
@@ -46,6 +56,9 @@ class FileNotebook {
         guard let note = Note.parse(json: noteJson) else { return }
         notes[note.uid] = note
       }
+      #if QA
+      print("Notes loaded from file")
+      #endif
     } catch {
       print(error)
     }

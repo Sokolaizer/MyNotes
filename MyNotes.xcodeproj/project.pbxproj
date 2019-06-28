@@ -15,9 +15,11 @@
 		5D7F85A322C49F81003B517B /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A022C49F80003B517B /* FileNotebook.swift */; };
 		5D7F85A422C49F81003B517B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A122C49F80003B517B /* Note.swift */; };
 		5D7F85A522C49F81003B517B /* NoteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A222C49F81003B517B /* NoteExtensions.swift */; };
+		9F88EE9F292F40A9BB5BB6D7 /* libPods-MyNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C826AB473CBAF24410F27942 /* libPods-MyNotes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
 		5D7F858B22C49F42003B517B /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F858E22C49F42003B517B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7F859022C49F42003B517B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,9 @@
 		5D7F85A022C49F80003B517B /* FileNotebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileNotebook.swift; sourceTree = "<group>"; };
 		5D7F85A122C49F80003B517B /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		5D7F85A222C49F81003B517B /* NoteExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteExtensions.swift; sourceTree = "<group>"; };
+		744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.qa.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.qa.xcconfig"; sourceTree = "<group>"; };
+		C826AB473CBAF24410F27942 /* libPods-MyNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F88EE9F292F40A9BB5BB6D7 /* libPods-MyNotes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,8 @@
 			children = (
 				5D7F858D22C49F42003B517B /* MyNotes */,
 				5D7F858C22C49F42003B517B /* Products */,
+				82E7DC17EF07BBF0B4EC1BEB /* Pods */,
+				62471CD5197130EF28FE4D09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +89,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		62471CD5197130EF28FE4D09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C826AB473CBAF24410F27942 /* libPods-MyNotes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82E7DC17EF07BBF0B4EC1BEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */,
+				744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */,
+				11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7F859D22C49F44003B517B /* Build configuration list for PBXNativeTarget "MyNotes" */;
 			buildPhases = (
+				9E5B7037094DE53713745741 /* [CP] Check Pods Manifest.lock */,
 				5D7F858722C49F42003B517B /* Sources */,
 				5D7F858822C49F42003B517B /* Frameworks */,
 				5D7F858922C49F42003B517B /* Resources */,
@@ -147,6 +174,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E5B7037094DE53713745741 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D7F858722C49F42003B517B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -182,6 +230,87 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		30844DFE22C694F800345DC9 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DQA";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		30844DFF22C694F800345DC9 /* QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FTKM847V49;
+				INFOPLIST_FILE = MyNotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.swiftcourses.MyNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
 		5D7F859B22C49F44003B517B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -237,6 +366,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -291,6 +421,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -300,6 +431,7 @@
 		};
 		5D7F859E22C49F44003B517B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +450,7 @@
 		};
 		5D7F859F22C49F44003B517B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +474,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D7F859B22C49F44003B517B /* Debug */,
+				30844DFE22C694F800345DC9 /* QA */,
 				5D7F859C22C49F44003B517B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -350,6 +484,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D7F859E22C49F44003B517B /* Debug */,
+				30844DFF22C694F800345DC9 /* QA */,
 				5D7F859F22C49F44003B517B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
