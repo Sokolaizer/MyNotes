@@ -15,11 +15,10 @@
 		5D7F85A322C49F81003B517B /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A022C49F80003B517B /* FileNotebook.swift */; };
 		5D7F85A422C49F81003B517B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A122C49F80003B517B /* Note.swift */; };
 		5D7F85A522C49F81003B517B /* NoteExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A222C49F81003B517B /* NoteExtensions.swift */; };
-		9F88EE9F292F40A9BB5BB6D7 /* libPods-MyNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C826AB473CBAF24410F27942 /* libPods-MyNotes.a */; };
+		6FE557BACC8D656356C26F61 /* libPods-MyNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68174A8F8543C0D267B24541 /* libPods-MyNotes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
 		5D7F858B22C49F42003B517B /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F858E22C49F42003B517B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7F859022C49F42003B517B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,9 +29,10 @@
 		5D7F85A022C49F80003B517B /* FileNotebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileNotebook.swift; sourceTree = "<group>"; };
 		5D7F85A122C49F80003B517B /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		5D7F85A222C49F81003B517B /* NoteExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteExtensions.swift; sourceTree = "<group>"; };
-		744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.qa.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.qa.xcconfig"; sourceTree = "<group>"; };
-		C826AB473CBAF24410F27942 /* libPods-MyNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		68174A8F8543C0D267B24541 /* libPods-MyNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68C5B4B5D4F5E12686A9F0F /* Pods-MyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.release.xcconfig"; sourceTree = "<group>"; };
+		BB5785A5A891C37CC81C7C2B /* Pods-MyNotes.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.qa.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.qa.xcconfig"; sourceTree = "<group>"; };
+		F32BFC7DAEE020892EA9D4D3 /* Pods-MyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotes/Pods-MyNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,20 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F88EE9F292F40A9BB5BB6D7 /* libPods-MyNotes.a in Frameworks */,
+				6FE557BACC8D656356C26F61 /* libPods-MyNotes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264B3ECF725BC72A7D6D10A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F32BFC7DAEE020892EA9D4D3 /* Pods-MyNotes.debug.xcconfig */,
+				BB5785A5A891C37CC81C7C2B /* Pods-MyNotes.qa.xcconfig */,
+				A68C5B4B5D4F5E12686A9F0F /* Pods-MyNotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5D7F858222C49F42003B517B = {
 			isa = PBXGroup;
 			children = (
 				5D7F858D22C49F42003B517B /* MyNotes */,
 				5D7F858C22C49F42003B517B /* Products */,
-				82E7DC17EF07BBF0B4EC1BEB /* Pods */,
-				62471CD5197130EF28FE4D09 /* Frameworks */,
+				264B3ECF725BC72A7D6D10A7 /* Pods */,
+				FA79566A4C75CE21DA0E0DDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,22 +99,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		62471CD5197130EF28FE4D09 /* Frameworks */ = {
+		FA79566A4C75CE21DA0E0DDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C826AB473CBAF24410F27942 /* libPods-MyNotes.a */,
+				68174A8F8543C0D267B24541 /* libPods-MyNotes.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		82E7DC17EF07BBF0B4EC1BEB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */,
-				744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */,
-				11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D7F859D22C49F44003B517B /* Build configuration list for PBXNativeTarget "MyNotes" */;
 			buildPhases = (
-				9E5B7037094DE53713745741 /* [CP] Check Pods Manifest.lock */,
+				D9BE08DE99FF50A2A845DC22 /* [CP] Check Pods Manifest.lock */,
 				5D7F858722C49F42003B517B /* Sources */,
 				5D7F858822C49F42003B517B /* Frameworks */,
 				5D7F858922C49F42003B517B /* Resources */,
@@ -175,7 +175,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E5B7037094DE53713745741 /* [CP] Check Pods Manifest.lock */ = {
+		D9BE08DE99FF50A2A845DC22 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,7 +294,7 @@
 		};
 		30844DFF22C694F800345DC9 /* QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 744C93DBEDD5BFB9B342ECEE /* Pods-MyNotes.qa.xcconfig */;
+			baseConfigurationReference = BB5785A5A891C37CC81C7C2B /* Pods-MyNotes.qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -431,7 +431,7 @@
 		};
 		5D7F859E22C49F44003B517B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBE063CB6C19B0B66E8D722B /* Pods-MyNotes.debug.xcconfig */;
+			baseConfigurationReference = F32BFC7DAEE020892EA9D4D3 /* Pods-MyNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,7 +450,7 @@
 		};
 		5D7F859F22C49F44003B517B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11AEA42901828C1C3126B4E0 /* Pods-MyNotes.release.xcconfig */;
+			baseConfigurationReference = A68C5B4B5D4F5E12686A9F0F /* Pods-MyNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

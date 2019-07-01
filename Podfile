@@ -3,8 +3,8 @@
 
 target 'MyNotes' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-pod 'CocoaLumberjack/Swift'
 
+pod 'CocoaLumberjack/Swift', '3.5.2'
   # Pods for MyNotes
 
 end
