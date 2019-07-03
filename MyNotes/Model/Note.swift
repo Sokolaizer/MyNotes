@@ -12,7 +12,7 @@ struct Note {
   init(uid: String = UUID().uuidString,
        title: String,
        content: String,
-       color: UIColor = .white,
+       color: UIColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0),
        importance: Importance,
        selfDestructDate: Date?) {
     self.uid = uid

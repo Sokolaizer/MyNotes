@@ -27,7 +27,7 @@ extension Note {
     dictionary["uid"] = uid
     dictionary["title"] = title
     dictionary["content"] = content
-    if color != .white{
+    if color.hexValue != UIColor.white.hexValue{
       dictionary["color"] = color.hexValue
     }
     if importance != .regular {

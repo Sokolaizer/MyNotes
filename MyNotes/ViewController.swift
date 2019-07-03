@@ -12,9 +12,12 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
-  
+  @IBOutlet weak var contentTextView: UITextView!
+  @IBOutlet weak var datePicker: UIDatePicker!
+  @IBAction func useDestroyDate(_ sender: UISwitch) {
+      datePicker.isHidden = !sender.isOn
+  }
   
 }
 
