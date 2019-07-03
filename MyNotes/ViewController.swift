@@ -18,6 +18,11 @@ class ViewController: UIViewController {
   @IBAction func useDestroyDate(_ sender: UISwitch) {
       datePicker.isHidden = !sender.isOn
   }
+  @IBAction func longPressGestureRecognizer(_ sender: UILongPressGestureRecognizer) {
+    if sender.state == .began {
+      performSegue(withIdentifier: "toColorPicker", sender: self)
+    }
+  }
   
 }
 
