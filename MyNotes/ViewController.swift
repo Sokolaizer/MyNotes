@@ -13,6 +13,7 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
   }
+  
   @IBOutlet weak var contentTextView: UITextView!
   @IBOutlet weak var datePicker: UIDatePicker!
   @IBAction func useDestroyDate(_ sender: UISwitch) {

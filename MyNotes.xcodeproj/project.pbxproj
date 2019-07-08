@@ -10,12 +10,11 @@
 		5D59E9ED22CA4498004E62BD /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59E9EC22CA4498004E62BD /* NotesTests.swift */; };
 		5D5B66F322CB37C500E6FF6F /* NotesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66F222CB37C500E6FF6F /* NotesExtensionTests.swift */; };
 		5D5B66F522CB38B300E6FF6F /* FileNotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66F422CB38B300E6FF6F /* FileNotebookTests.swift */; };
-		5D5B66FA22CC963900E6FF6F /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66F922CC963900E6FF6F /* ColorPickerViewController.swift */; };
 		5D5B66FC22CCBCB100E6FF6F /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */; };
 		5D5B66FE22CCC57500E6FF6F /* ColorSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */; };
+		5D5B670322D3910600E6FF6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B670122D37C0100E6FF6F /* Main.storyboard */; };
 		5D7F858F22C49F42003B517B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F858E22C49F42003B517B /* AppDelegate.swift */; };
 		5D7F859122C49F42003B517B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F859022C49F42003B517B /* ViewController.swift */; };
-		5D7F859422C49F42003B517B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F859222C49F42003B517B /* Main.storyboard */; };
 		5D7F859622C49F44003B517B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F859522C49F44003B517B /* Assets.xcassets */; };
 		5D7F859922C49F44003B517B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F859722C49F44003B517B /* LaunchScreen.storyboard */; };
 		5D7F85A322C49F81003B517B /* FileNotebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F85A022C49F80003B517B /* FileNotebook.swift */; };
@@ -42,13 +41,12 @@
 		5D59E9EE22CA4498004E62BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D5B66F222CB37C500E6FF6F /* NotesExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesExtensionTests.swift; sourceTree = "<group>"; };
 		5D5B66F422CB38B300E6FF6F /* FileNotebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNotebookTests.swift; sourceTree = "<group>"; };
-		5D5B66F922CC963900E6FF6F /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSampleView.swift; sourceTree = "<group>"; };
+		5D5B670122D37C0100E6FF6F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/romanko-c/Developer/MyNotes/MyNotes/Main.storyboard"; sourceTree = "<absolute>"; };
 		5D7F858B22C49F42003B517B /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F858E22C49F42003B517B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7F859022C49F42003B517B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D7F859322C49F42003B517B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D7F859522C49F44003B517B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7F859822C49F44003B517B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D7F859A22C49F44003B517B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,9 +133,8 @@
 				5D7F858E22C49F42003B517B /* AppDelegate.swift */,
 				5D7F859022C49F42003B517B /* ViewController.swift */,
 				5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */,
+				5D5B670122D37C0100E6FF6F /* Main.storyboard */,
 				5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */,
-				5D5B66F922CC963900E6FF6F /* ColorPickerViewController.swift */,
-				5D7F859222C49F42003B517B /* Main.storyboard */,
 				5D7F859522C49F44003B517B /* Assets.xcassets */,
 				5D7F859722C49F44003B517B /* LaunchScreen.storyboard */,
 				5D7F859A22C49F44003B517B /* Info.plist */,
@@ -254,9 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D5B670322D3910600E6FF6F /* Main.storyboard in Resources */,
 				5D7F859922C49F44003B517B /* LaunchScreen.storyboard in Resources */,
 				5D7F859622C49F44003B517B /* Assets.xcassets in Resources */,
-				5D7F859422C49F42003B517B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +315,6 @@
 			files = (
 				5D7F85A322C49F81003B517B /* FileNotebook.swift in Sources */,
 				5D7F859122C49F42003B517B /* ViewController.swift in Sources */,
-				5D5B66FA22CC963900E6FF6F /* ColorPickerViewController.swift in Sources */,
 				5D5B66FC22CCBCB100E6FF6F /* ColorPickerView.swift in Sources */,
 				5D5B66FE22CCC57500E6FF6F /* ColorSampleView.swift in Sources */,
 				5D7F85A522C49F81003B517B /* NoteExtensions.swift in Sources */,
@@ -338,14 +334,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D7F859222C49F42003B517B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D7F859322C49F42003B517B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D7F859722C49F44003B517B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
