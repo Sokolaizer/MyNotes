@@ -19,6 +19,11 @@ class ViewController: UIViewController {
   @IBAction func useDestroyDate(_ sender: UISwitch) {
       datePicker.isHidden = !sender.isOn
   }
+  @IBOutlet weak var whiteSample: ColorSampleView! {
+    didSet {
+      whiteSample.setup(with: .white, and: true)
+    }
+  }
   
 }
 

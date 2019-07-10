@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30E6614622D3D657007DD9B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E6614522D3D656007DD9B9 /* Main.storyboard */; };
 		5D59E9ED22CA4498004E62BD /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59E9EC22CA4498004E62BD /* NotesTests.swift */; };
 		5D5B66F322CB37C500E6FF6F /* NotesExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66F222CB37C500E6FF6F /* NotesExtensionTests.swift */; };
 		5D5B66F522CB38B300E6FF6F /* FileNotebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66F422CB38B300E6FF6F /* FileNotebookTests.swift */; };
 		5D5B66FC22CCBCB100E6FF6F /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */; };
 		5D5B66FE22CCC57500E6FF6F /* ColorSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */; };
-		5D5B670322D3910600E6FF6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D5B670122D37C0100E6FF6F /* Main.storyboard */; };
 		5D7F858F22C49F42003B517B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F858E22C49F42003B517B /* AppDelegate.swift */; };
 		5D7F859122C49F42003B517B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7F859022C49F42003B517B /* ViewController.swift */; };
 		5D7F859622C49F44003B517B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7F859522C49F44003B517B /* Assets.xcassets */; };
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30E6614522D3D656007DD9B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		332F14021309E1C30E3E352A /* Pods-MyNotesTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotesTests.qa.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotesTests/Pods-MyNotesTests.qa.xcconfig"; sourceTree = "<group>"; };
 		5D59E9EA22CA4498004E62BD /* MyNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D59E9EC22CA4498004E62BD /* NotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTests.swift; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		5D5B66F422CB38B300E6FF6F /* FileNotebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileNotebookTests.swift; sourceTree = "<group>"; };
 		5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSampleView.swift; sourceTree = "<group>"; };
-		5D5B670122D37C0100E6FF6F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/romanko-c/Developer/MyNotes/MyNotes/Main.storyboard"; sourceTree = "<absolute>"; };
 		5D7F858B22C49F42003B517B /* MyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7F858E22C49F42003B517B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D7F859022C49F42003B517B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 			children = (
 				5D7F85A622C49FA9003B517B /* Model */,
 				5D7F858E22C49F42003B517B /* AppDelegate.swift */,
+				30E6614522D3D656007DD9B9 /* Main.storyboard */,
 				5D7F859022C49F42003B517B /* ViewController.swift */,
 				5D5B66FD22CCC57500E6FF6F /* ColorSampleView.swift */,
-				5D5B670122D37C0100E6FF6F /* Main.storyboard */,
 				5D5B66FB22CCBCB100E6FF6F /* ColorPickerView.swift */,
 				5D7F859522C49F44003B517B /* Assets.xcassets */,
 				5D7F859722C49F44003B517B /* LaunchScreen.storyboard */,
@@ -251,7 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5B670322D3910600E6FF6F /* Main.storyboard in Resources */,
+				30E6614622D3D657007DD9B9 /* Main.storyboard in Resources */,
 				5D7F859922C49F44003B517B /* LaunchScreen.storyboard in Resources */,
 				5D7F859622C49F44003B517B /* Assets.xcassets in Resources */,
 			);

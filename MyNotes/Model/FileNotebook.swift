@@ -10,6 +10,7 @@ class FileNotebook {
   private var filePath: URL? {
     return path?.appendingPathComponent("notes").appendingPathExtension("json")
   }
+  
   private func setupLogger() {
     DDLog.add(DDTTYLogger.sharedInstance)
     fileLogger.rollingFrequency = TimeInterval(60*60*24)

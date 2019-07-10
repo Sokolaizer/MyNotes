@@ -9,13 +9,20 @@
 import UIKit
 
 class ColorSampleView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+  let borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+  
+  func setup(with color: UIColor, and marked: Bool) {
+    self.layer.cornerRadius = 8.0
+    self.layer.borderColor = borderColor.cgColor
+    self.layer.borderWidth = 5.0
+    self.backgroundColor = color
+    
+    let markCenter = CGPoint(x: -25.0, y: 25.0)
+    let path = UIBezierPath()
+    path.addArc(withCenter: markCenter, radius: 12.0, startAngle: 0, endAngle: .pi, clockwise: true)
+    path.close()
+    UIColor.green.setStroke()
+  }
+  
 
 }
