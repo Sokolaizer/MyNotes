@@ -24,12 +24,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BnC-JC-idU">
                                         <rect key="frame" x="16" y="16" width="343" height="392"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter title for your note" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9TQ-RB-Ejw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title for your note" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9TQ-RB-Ejw">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="566-GB-vEP"/>
                                                 </constraints>
-                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -132,6 +132,7 @@
                     <connections>
                         <outlet property="contentTextView" destination="FEi-Vz-IX4" id="EV4-3A-rBt"/>
                         <outlet property="datePicker" destination="6bA-uu-cyg" id="kmq-DY-fdL"/>
+                        <outlet property="scrollView" destination="LXG-Ce-9uB" id="Lzv-OK-c3Z"/>
                         <outlet property="whiteSample" destination="rVy-We-mGq" id="fUZ-f9-ORb"/>
                     </connections>
                 </viewController>

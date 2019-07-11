@@ -8,20 +8,46 @@
 
 import UIKit
 
-class ColorSampleView: UIView {
-  let borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+class ColorSampleView: UIView, UIGestureRecognizerDelegate {
+  var isMarked = false
   
-  func setup(with color: UIColor, and marked: Bool) {
-    self.layer.cornerRadius = 8.0
-    self.layer.borderColor = borderColor.cgColor
-    self.layer.borderWidth = 5.0
-    self.backgroundColor = color
-    
-    let markCenter = CGPoint(x: -25.0, y: 25.0)
+  override func draw(_ rect: CGRect) {
+    super.draw(rect)
+    let markCenter = CGPoint(x: bounds.maxX - 18.0, y: bounds.minY + 18.0 )
     let path = UIBezierPath()
-    path.addArc(withCenter: markCenter, radius: 12.0, startAngle: 0, endAngle: .pi, clockwise: true)
-    path.close()
-    UIColor.green.setStroke()
+    path.addArc(withCenter: markCenter, radius: 12.0, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
+    path.move(to: CGPoint(x: bounds.maxX - 12.0 , y: bounds.minY + 10.0 ))
+    path.addLine(to: CGPoint(x: bounds.maxX - 18.0, y:bounds.minY  + 24.0))
+    path.addLine(to: CGPoint(x: bounds.maxX - 26.0, y: bounds.minY + 18.0))
+    path.lineWidth = 3.0
+    UIColor.black.setStroke()
+    if isMarked {
+    path.stroke()
+    }
+  }
+  
+  func setup() {
+    let tap = UITapGestureRecognizer(target: self, action: #selector(tap(sender:)))
+    tap.delegate = self
+    self.addGestureRecognizer(tap)
+
+    self.layer.borderColor = UIColor.black.cgColor
+    self.layer.borderWidth = 2.0
+  }
+  
+  @objc func tap(sender: UITapGestureRecognizer) {
+    isMarked = !isMarked
+    setNeedsDisplay()
+  }
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    setup()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
   }
   
 
