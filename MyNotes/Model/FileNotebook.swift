@@ -4,7 +4,7 @@ import CocoaLumberjack
 
 class FileNotebook {
   public let fileLogger = DDFileLogger()
-  public private(set) var notes = [String: Note]()
+  public private(set) var notes = [Note]()
   private let fm = FileManager.default
   private let path = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first
   private var filePath: URL? {
@@ -18,16 +18,34 @@ class FileNotebook {
     DDLog.add(fileLogger, with: .info)
   }
   public func add(_ note: Note) {
-    notes[note.uid] = note
+//    for index in notes.indices {
+//      if notes[index].uid == note.uid {
+//        notes[index] = note
+//        return
+//      }
+//    }
+    notes.append(note)
     #if QA
     DDLogInfo("Note \(note.uid) added")
     #endif
   }
   
   public func remove(with uid: String) {
-    notes.removeValue(forKey: uid)
+    for index in notes.indices {
+      if notes[index].uid == uid {
+        notes.remove(at: index)
+        return
+      }
+    }
     #if QA
     DDLogInfo("Note \(uid) removed")
+    #endif
+  }
+  
+  public func removeAll() {
+    notes.removeAll()
+    #if QA
+    DDLogInfo("All notes removed")
     #endif
   }
   
@@ -37,7 +55,7 @@ class FileNotebook {
     guard let path = path,
       let filePath = filePath else { return }
     for note in notes {
-      json.append(note.value.json)
+      json.append(note.json)
     }
     if !fm.fileExists(atPath: path.path, isDirectory: &isDir),
       !isDir.boolValue {
@@ -62,7 +80,7 @@ class FileNotebook {
       try fm.removeItem(at: filePath)
       for noteJson in json {
         guard let note = Note.parse(json: noteJson) else { return }
-        notes[note.uid] = note
+        notes.append(note)
       }
       #if QA
       DDLogInfo("Notes loaded from file")

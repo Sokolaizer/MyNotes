@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MyNotes
-//
-//  Created by Roman Kozlov on 27.06.2019.
-//  Copyright © 2019 Roman Kozlov. All rights reserved.
-//
 
 import UIKit
 import CocoaLumberjack
